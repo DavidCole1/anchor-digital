@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rootline Landscaping</title>
+<meta name="description" content="Rootline Landscaping — weekly mowing, planting bed design, and seasonal cleanup for homeowners who want their yard done once, done well.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --moss:#3F5B3C;
+    --moss-dark:#2C4229;
+    --clay:#B5652E;
+    --cream:#F7F3E9;
+    --bark:#2B2118;
+    --sand:#E4D8BE;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--cream);color:var(--bark);font-family:'Work Sans',sans-serif;line-height:1.6;}
+  .wrap{max-width:960px;margin:0 auto;padding:0 28px;}
+  a{color:inherit;}
+  :focus-visible{outline:2px solid var(--moss);outline-offset:3px;}
+
+  header{padding:26px 0;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--sand);}
+  .logo{font-family:'Fraunces',serif;font-weight:600;font-size:22px;letter-spacing:-0.01em;}
+  .logo span{color:var(--moss);}
+  nav a{margin-left:26px;font-size:14px;font-weight:500;text-decoration:none;}
+  .cta-btn{background:var(--moss);color:var(--cream);padding:10px 20px;border-radius:3px;font-weight:600;font-size:14px;text-decoration:none;display:inline-block;}
+
+  .hero{padding:80px 0 60px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;align-items:center;}
+  .hero h1{font-family:'Fraunces',serif;font-weight:500;font-size:52px;line-height:1.08;letter-spacing:-0.01em;max-width:480px;}
+  .hero h1 em{font-style:italic;color:var(--moss);}
+  .hero p{margin-top:18px;font-size:16px;color:#4a4237;max-width:420px;}
+  .hero .cta-btn{margin-top:26px;}
+
+  .rings{width:100%;max-width:340px;justify-self:end;}
+
+  section{padding:56px 0;border-top:1px solid var(--sand);}
+  .eyebrow{font-family:'Work Sans',sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--moss);font-weight:700;margin-bottom:10px;}
+  h2{font-family:'Fraunces',serif;font-weight:500;font-size:32px;margin-bottom:24px;}
+
+  .beds{display:flex;flex-direction:column;}
+  .bed-row{
+    display:grid;grid-template-columns:60px 1fr 140px;gap:20px;align-items:center;
+    padding:18px 0;border-bottom:1px solid var(--sand);
+  }
+  .bed-row:last-child{border-bottom:none;}
+  .bed-num{font-family:'Fraunces',serif;font-size:24px;color:var(--clay);font-style:italic;}
+  .bed-name{font-weight:600;font-size:16px;}
+  .bed-desc{font-size:14px;color:#5c5344;margin-top:3px;}
+  .bed-price{text-align:right;font-weight:600;color:var(--moss-dark);}
+
+  .trust{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center;}
+  .trust-num{font-family:'Fraunces',serif;font-size:38px;color:var(--moss);}
+  .trust-label{font-size:13px;color:#5c5344;margin-top:4px;}
+
+  .cta-section{background:var(--moss-dark);color:var(--cream);border-radius:6px;padding:44px 40px;text-align:center;margin:0;}
+  .cta-section h2{color:var(--cream);}
+  .cta-section p{color:var(--sand);max-width:420px;margin:0 auto 22px;}
+  .cta-section .cta-btn{background:var(--clay);}
+
+  footer{padding:30px 0;text-align:center;font-size:13px;color:#5c5344;}
+
+  @media(max-width:760px){
+    .hero{grid-template-columns:1fr;}
+    .rings{justify-self:start;margin-top:20px;max-width:220px;}
+    .hero h1{font-size:36px;}
+    .bed-row{grid-template-columns:40px 1fr;grid-template-areas:"num name" ". price";}
+    .bed-price{text-align:left;grid-column:2;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">Root<span>line</span></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#" class="cta-btn">Get a Free Quote</a>
+    </nav>
+  </header>
+
+  <section class="hero" style="border-top:none;">
+    <div>
+      <h1>Your yard, <em>mapped and grown</em> right.</h1>
+      <p>Full-service lawn care, planting beds, and seasonal cleanup for homeowners who want it done once, done well.</p>
+      <a href="#" class="cta-btn">Get a Free Quote</a>
+    </div>
+    <svg class="rings" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="150" cy="150" r="130" fill="none" stroke="#D8CBA6" stroke-width="1.5"/>
+      <circle cx="150" cy="150" r="98" fill="none" stroke="#C7B98C" stroke-width="1.5"/>
+      <circle cx="150" cy="150" r="66" fill="none" stroke="#3F5B3C" stroke-width="2"/>
+      <circle cx="150" cy="150" r="34" fill="none" stroke="#B5652E" stroke-width="2"/>
+      <circle cx="150" cy="150" r="6" fill="#3F5B3C"/>
+    </svg>
+  </section>
+
+  <section id="services">
+    <div class="eyebrow">Planting Schedule</div>
+    <h2>What we do, row by row</h2>
+    <div class="beds">
+      <div class="bed-row">
+        <div class="bed-num">01</div>
+        <div><div class="bed-name">Weekly Mowing &amp; Edging</div><div class="bed-desc">Clean lines, every week, rain-checked automatically</div></div>
+        <div class="bed-price">from $45/wk</div>
+      </div>
+      <div class="bed-row">
+        <div class="bed-num">02</div>
+        <div><div class="bed-name">Planting Bed Design</div><div class="bed-desc">Native, low-maintenance beds built for your soil</div></div>
+        <div class="bed-price">from $650</div>
+      </div>
+      <div class="bed-row">
+        <div class="bed-num">03</div>
+        <div><div class="bed-name">Seasonal Cleanup</div><div class="bed-desc">Spring and fall — leaves, mulch, and pruning handled</div></div>
+        <div class="bed-price">from $180</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Why homeowners switch to us</div>
+    <div class="trust">
+      <div><div class="trust-num">12yr</div><div class="trust-label">Serving this community</div></div>
+      <div><div class="trust-num">400+</div><div class="trust-label">Yards maintained</div></div>
+      <div><div class="trust-num">24hr</div><div class="trust-label">Quote turnaround</div></div>
+    </div>
+  </section>
+
+  <section style="border-top:none;">
+    <div class="cta-section">
+      <h2>Ready for a yard you don't think about?</h2>
+      <p>Tell us your address and what's bugging you about your yard. We'll send a quote within a day.</p>
+      <a href="#" class="cta-btn">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <footer>Rootline Landscaping · Sample site built by Anchor Digital</footer>
+</div>
+</body>
+</html>
