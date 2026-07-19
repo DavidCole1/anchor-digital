@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basin &amp; Blade</title>
+<meta name="description" content="Basin &amp; Blade — downtown color, cuts, and styling with formulas kept on file so your exact shade is always one text away.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#141414;
+    --cream:#F4EFE6;
+    --gold:#B08D57;
+    --rose:#C97B63;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--ink);color:var(--cream);font-family:'Lora',serif;line-height:1.6;}
+  .wrap{max-width:960px;margin:0 auto;padding:0 28px;}
+  a{color:inherit;}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+
+  header{display:flex;justify-content:space-between;align-items:center;padding:26px 0;border-bottom:1px solid #2b2b2b;}
+  .logo{font-family:'Anton',sans-serif;font-size:22px;letter-spacing:.03em;text-transform:uppercase;}
+  nav a{margin-left:24px;font-size:13px;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;color:var(--cream);}
+  .book-btn{border:1px solid var(--gold);color:var(--gold);padding:9px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;}
+
+  .hero{padding:90px 0 60px;text-align:center;}
+  .hero .eyebrow{font-family:'Lora',serif;font-style:italic;color:var(--rose);font-size:15px;margin-bottom:16px;}
+  .hero h1{
+    font-family:'Anton',sans-serif;
+    font-size:88px;
+    line-height:0.95;
+    text-transform:uppercase;
+    letter-spacing:.01em;
+  }
+  .hero p{margin:22px auto 0;max-width:420px;color:#c9c2b6;font-size:15.5px;}
+  .book-btn.big{display:inline-block;margin-top:28px;padding:13px 30px;font-size:13px;}
+
+  /* SWATCH STRIP -- signature element: real color-swatch style service menu */
+  .swatch-strip{display:flex;overflow-x:auto;gap:0;margin:50px 0 0;border-top:1px solid #2b2b2b;border-bottom:1px solid #2b2b2b;}
+  .swatch{
+    flex:1;min-width:150px;padding:22px 16px;border-right:1px solid #2b2b2b;
+  }
+  .swatch:last-child{border-right:none;}
+  .swatch-chip{width:100%;height:34px;border-radius:2px;margin-bottom:12px;}
+  .swatch-name{font-family:'Anton',sans-serif;font-size:13px;letter-spacing:.04em;text-transform:uppercase;}
+  .swatch-price{font-family:'Lora',serif;font-style:italic;color:#9c9284;font-size:13px;margin-top:4px;}
+
+  section{padding:60px 0;}
+  h2{font-family:'Anton',sans-serif;font-size:30px;text-transform:uppercase;margin-bottom:20px;letter-spacing:.02em;}
+
+  /* Appointment ticket stub -- CTA styled like a real salon appointment card */
+  .ticket{
+    background:var(--cream);color:var(--ink);border-radius:4px;padding:36px 40px;
+    display:flex;justify-content:space-between;align-items:center;gap:20px;
+    position:relative;
+  }
+  .ticket::before,.ticket::after{
+    content:"";position:absolute;top:50%;width:24px;height:24px;background:var(--ink);border-radius:50%;transform:translateY(-50%);
+  }
+  .ticket::before{left:-12px;}
+  .ticket::after{right:-12px;}
+  .ticket h3{font-family:'Anton',sans-serif;font-size:24px;text-transform:uppercase;max-width:320px;line-height:1.15;}
+  .ticket p{font-size:13.5px;color:#5c5346;margin-top:8px;}
+  .ticket .book-btn{border-color:var(--ink);color:var(--ink);white-space:nowrap;}
+
+  footer{padding:28px 0;text-align:center;font-size:12.5px;color:#9c9284;border-top:1px solid #2b2b2b;}
+
+  @media(max-width:760px){
+    .hero h1{font-size:52px;}
+    .ticket{flex-direction:column;text-align:center;}
+    .ticket::before,.ticket::after{display:none;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">Basin &amp; Blade</div>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#" class="book-btn">Book Now</a>
+    </nav>
+  </header>
+
+  <section class="hero" style="padding-top:70px;">
+    <div class="eyebrow">Downtown's chair worth waiting for</div>
+    <h1>Sit down.<br>Get seen.</h1>
+    <p>Color, cuts, and styling from a team that treats your appointment like the only one that matters — because for that hour, it is.</p>
+    <a href="#" class="book-btn big">Book Your Chair</a>
+  </section>
+
+  <div class="swatch-strip" id="menu">
+    <div class="swatch"><div class="swatch-chip" style="background:#8B5A3C;"></div><div class="swatch-name">Cut &amp; Style</div><div class="swatch-price">from $65</div></div>
+    <div class="swatch"><div class="swatch-chip" style="background:#C97B63;"></div><div class="swatch-name">Balayage</div><div class="swatch-price">from $180</div></div>
+    <div class="swatch"><div class="swatch-chip" style="background:#B08D57;"></div><div class="swatch-name">Full Color</div><div class="swatch-price">from $120</div></div>
+    <div class="swatch"><div class="swatch-chip" style="background:#4A3B32;"></div><div class="swatch-name">Blowout</div><div class="swatch-price">from $45</div></div>
+  </div>
+
+  <section>
+    <h2>Why regulars stay regulars</h2>
+    <p style="color:#c9c2b6;max-width:520px;">No overbooking, no rushed color jobs. Every color formula is written down and kept on file, so your exact shade is one text away — every time you're back in the chair.</p>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="ticket">
+      <div>
+        <h3>First time here? Your first color service comes with a free consult.</h3>
+        <p>Walk-ins welcome for cuts. Color and treatments by appointment.</p>
+      </div>
+      <a href="#" class="book-btn">Book Now</a>
+    </div>
+  </section>
+
+  <footer>Basin &amp; Blade Salon · Sample site built by Anchor Digital</footer>
+</div>
+</body>
+</html>
