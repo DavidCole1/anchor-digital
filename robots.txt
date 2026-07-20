@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /samples/
 
-Sitemap: /sitemap.xml
+Sitemap: https://anchor-digital-tau.vercel.app/sitemap.xml
