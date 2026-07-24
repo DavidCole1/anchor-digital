@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://anchor-digital-tau.vercel.app/sitemap.xml
+Sitemap: https://fieldcraft-va.vercel.app/sitemap.xml
